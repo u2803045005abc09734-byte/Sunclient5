@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sunclient",
+  "version": "${version}",
+  "name": "Sun Client",
+  "description": "Sun Client mit skalierbarem HUD, horizontaler/vertikaler Rüstungsanzeige, Freelook, eigenem Third-Person-Nametag und Modrinth-Resource-Pack-Browser mit Vorschaubildern.",
+  "authors": ["Sun Client Community"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.sunclient.SunClient"]
+  },
+  "mixins": ["sunclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
